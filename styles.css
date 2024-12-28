@@ -1,0 +1,135 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+input {
+    padding: 10px;
+    width: 300px;
+    margin: 10px 0;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+button:active {
+    background-color: #1abc9c;
+}
+
+/* Section Styling */
+#signupSection, #signinSection, #feedSection {
+    margin: 20px;
+}
+
+#feedSection {
+    max-width: 600px;
+    width: 100%;
+}
+
+#feed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Feed Posts */
+.post {
+    background-color: white;
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.post .content {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.post .username {
+    font-size: 14px;
+    color: #555;
+}
+
+.post .timestamp {
+    font-size: 12px;
+    color: #888;
+}
+
+.post .like-button,
+.post .comment-button {
+    background-color: #3498db;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.post .like-button:hover,
+.post .comment-button:hover {
+    background-color: #2980b9;
+}
+
+.post .like-count {
+    font-size: 14px;
+    color: #777;
+}
+
+/* Form Styling */
+h2 {
+    color: #2c3e50;
+    font-size: 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: #3498db;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Logout Button */
+#logoutButton {
+    margin-top: 20px;
+    background-color: #e74c3c;
+}
+
+#logoutButton:hover {
+    background-color: #c0392b;
+}
