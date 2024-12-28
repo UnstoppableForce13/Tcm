@@ -11,7 +11,7 @@ body {
     height: 100vh;
 }
 
-input {
+input, select {
     padding: 10px;
     width: 300px;
     margin: 10px 0;
@@ -21,7 +21,7 @@ input {
     transition: all 0.3s ease;
 }
 
-input:focus {
+input:focus, select:focus {
     outline: none;
     border-color: #3498db;
 }
@@ -51,15 +51,8 @@ button:active {
 }
 
 #feedSection {
-    max-width: 600px;
+    max-width: 800px;
     width: 100%;
-}
-
-#feed {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
 }
 
 /* Feed Posts */
@@ -108,6 +101,25 @@ button:active {
     color: #777;
 }
 
+/* Profile Styling */
+#profileSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#profileImage {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+#followUnfollowButton {
+    margin-top: 10px;
+}
+
 /* Form Styling */
 h2 {
     color: #2c3e50;
@@ -132,4 +144,13 @@ a:hover {
 
 #logoutButton:hover {
     background-color: #c0392b;
+}
+
+#postForm input[type="file"], #postForm input[type="url"] {
+    display: block;
+    margin: 10px auto;
+}
+
+#postForm input[type="file"]:hover, #postForm input[type="url"]:hover {
+    background-color: #2980b9;
 }
